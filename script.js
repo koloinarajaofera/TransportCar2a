@@ -5,7 +5,7 @@
     var isBusy = false; // vrai pendant le traitement d'un scan (évite les doublons)
     var isRunning = false; // vrai tant que la caméra scanne activement
     var selectedMode = 'entree';
-    var API_URL = (typeof window !== 'undefined' && window.API_URL) || '';
+    var API_URL = (typeof window !== 'undefined' && window.API_URL) || 'https://script.google.com/macros/s/AKfycbww6ehBMU7XGoz5-TFC2G5fyqKS7zxkTUAFcHhDtdbz2_Z5QPt_hpwDQMjjvUbq8Mlc/exec';
     var config = { fps: 12, qrbox: { width: 250, height: 250 } };
 
     function setMode(mode) {
